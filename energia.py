@@ -20,14 +20,14 @@ model.Dt_p=Param()
 model.E_in=Var(within= NonNegativeReals)
 model.E_out=Var(within= NonNegativeReals)
 
-fun obj_rule(model):
+def obj_rule(model):
 	return ()
-model.obj=Objective()
+model.obj=Objective(rule=obj_rule)
 
-fun con1_rule()
+def con1_rule():
 	return ()
-model.con1=Constraint()
+model.con1=Constraint(rule=con1_rule)
 
-fun con2_rule()
+def con2_rule():
 	return ()
-model.con2=Constraint()
+model.con2=Constraint(rule=con2_rule)

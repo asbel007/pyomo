@@ -1,4 +1,3 @@
-#ejemplo de programacion
 from pyomo.environ import *
 
 model=AbstractModel()

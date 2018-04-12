@@ -1,15 +1,23 @@
-#set hour:= 1 2 3 4 5 6 7 8 9;
-param P_out:= 7;
-param Dt_p:= 1;
+set hour:= 1 2 3 4 5 6 7 8 9;
 
-param: price:=
-	1	4,16
-	2	9,70
-	3	3,59
-	4	3,68
-	5	9,24
-	6	3,32
-	7	9,50
-	8	7,63
-	9	9,65 ;
+param P_out:= 7;
+param P_in:= 7;
+param Dt_p:= 1;
+param n_in:= 0.95;
+param n_out:= 0.93;
+param Cap:= 6.4;
+param PDD:= 0.20;
+
+param price:=
+	1	4.6
+	2	9.70
+	3	3.59
+	4	3.68
+	5	9.24
+	6	3.32
+	7	9.50
+	8	7.3
+	9	9.65 ;
+	
+#OBS:El valor decimal debe ser con PUNTO, no coma
 

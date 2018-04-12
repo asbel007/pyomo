@@ -35,13 +35,6 @@ def con3_rule(model,i):
 	return (model.Cap*model.PDD <= model.E_in[i]*model.n_in - model.E_out[i]*model.n_out <= model.Cap)
 model.Con3= Constraint(model.hour, rule= con3_rule)
 
-'''
-def conDif_rule(model,i):
-	#return (model.Cap*model.PDD <= model.E_in[i]*model.n_in-model.E_out[i]/model.n_out
-	return (0 <= model.E_out[i]-model.E_in[i])
-model.Con_DE= Constraint(model.hour, rule= conDif_rule)
-'''
-
 from pyomo.opt import SolverFactory
 opt = SolverFactory('glpk')
 instance = model.create_instance("data_tuto.dat")                               

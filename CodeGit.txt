@@ -1,4 +1,4 @@
-#añadir modificaciones
+﻿#añadir modificaciones
 git add .
 git commit -m "Comentario"
 git push -u origin master
@@ -10,6 +10,16 @@ git branch
 #Cambiar de rama
 git checkout master
 
+#Añadir nueva rama 
+
 #mostra historial de commit
 git log
 
+#Actualizar local desde remoto
+git checkout -b dev1
+git branch dev1
+git pull origin dev1
+
+#Actualizar un archivo desde rama a master
+git checkout dev1
+git add 

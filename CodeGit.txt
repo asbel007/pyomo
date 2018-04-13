@@ -20,6 +20,10 @@ git checkout -b dev1
 git branch dev1
 git pull origin dev1
 
-#Actualizar un archivo desde rama a master
+#Actualizar/ unir archivos de dev1 a master
 git checkout dev1
-git add 
+git commit -a -m "OTroCommitDev"
+git checkout master
+git add .
+git commit -m "commitMaster"
+git push -u origin master

@@ -2,8 +2,9 @@
 -
 Variables
 -
-Set
+Set.
 Param
+
 Var
 Objective
 Contraint

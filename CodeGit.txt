@@ -1,15 +1,2 @@
-#añadir modificaciones
-git add .
-git commit -m "Comentario"
-git push -u origin master
-
-#crear nueva rama y moverte en la nueva rama
-git checkout -b nueva_rama
-git branch
-
-#Cambiar de rama
-git checkout master
-
-#mostra historial de commit
-git log
-
+#GIT
+----

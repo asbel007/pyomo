@@ -1,2 +1,39 @@
-#GIT
-----
+﻿#añadir modificaciones
+git add .
+git commit -m "Comentario"
+git push -u origin master
+
+#crear nueva rama y moverte en la nueva rama
+git checkout -b nueva_rama
+git branch
+
+#Cambiar de rama
+git checkout master
+
+#Añadir nueva rama 
+
+#mostra historial de commit
+git log
+
+#Actualizar local desde remoto
+git checkout -b dev1
+git branch dev1
+git pull origin dev1
+
+#Actualizar/ unir archivos de dev1 a master
+git checkout dev1
+git commit -a -m "OTroCommitDev"
+git checkout master
+git add .
+git commit -m "commitMaster"
+git push -u origin master
+
+#ERRORES
+error: you need to resolve your current index first 
+archivo.txt: needs merge
+git reset --merge
+
+	error: Your local changes to the following files would be overwritten by checkout: archive.txt
+Please commit your changes or stash them before yu switch branches.
+Aborting
+>> git checkout -f dev2

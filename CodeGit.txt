@@ -1,5 +1,4 @@
-<<<<<<< HEAD
-#añadir modificaciones
+﻿#añadir modificaciones
 git add .
 git commit -m "Comentario"
 git push -u origin master
@@ -11,10 +10,40 @@ git branch
 #Cambiar de rama
 git checkout master
 
+#Añadir nueva rama 
+
 #mostra historial de commit
 git log
 
-=======
-#GIT
-----
->>>>>>> dev3
+#Actualizar local desde remoto
+git checkout -b dev1
+git branch dev1
+git pull origin dev1
+
+#Actualizar/ unir archivos de dev1 a master
+git checkout dev1
+git commit -a -m "OTroCommitDev"
+git checkout master
+git add .
+git commit -m "commitMaster"
+git push -u origin master
+
+#ERRORES
+error: you need to resolve your current index first archivo.txt: needs merge
+>> git reset --merge
+
+>> git push origin master
+error: Your local changes to the following files would be overwritten by merge archive.txt
+Please commit your changes or stash them before you merge. Aborting
+>> git push -u origin master -f
+
+error: Your local changes to the following files would be overwritten by checkout: archive.txt
+Please commit your changes or stash them before you switch branches.
+Aborting
+>> git checkout -f dev2
+
+error: failed to push some refs to 'https://github.com/asbel007/pyomo.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g. 
+hint: 'git pull ...') before pushing again.
+hitn: See the 'Note about fast-forwards' in 'git push --help' for details.

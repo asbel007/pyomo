@@ -1,5 +1,4 @@
 # Proffit Optimization
--
 Variables
 -
 Set

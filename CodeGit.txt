@@ -51,6 +51,8 @@ hint: Updates were rejected because the tip of your current branch is behind
 hint: its remote counterpart. Integrate the remote changes (e.g. 
 hint: 'git pull ...') before pushing again.
 hitn: See the 'Note about fast-forwards' in 'git push --help' for details.
+>>git pull --rabase origin master
+>>git push -u origin master
 
 error: Committing is not possible because you have unmerged files.
 hint: Fix them up in the work tree, and then use 'git add/rm <file>'
